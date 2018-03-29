@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--
+
+a quickie website by robin 
+
+github @robinpx 
+
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="robinpx.png" type="image/x-icon" />
+		<title>robin</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Muli:700" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function() {
+			var palette = [["#215552", "#ffffff", "#ffbcd8", "#e4da8d"],
+			["#067105","#ffffff","#fec3c2", "#ccedf2"],
+			["#6f1835","#ffffff", "#8de4c7", "#d1e48d"],
+			["#202020","#ffffff", "#c6e7ff", "#c6ffcd"]];
+			var num = Math.floor(Math.random() * palette.length-1);
+			$("body").css({ background : palette[num][0], color : palette[num][1] });
+			$("h1,h2,h3").css("color", palette[num][2]);
+			$(".list a").css("color", palette[num][3]);
+		});
+		</script>
+		<style>
+			@media only screen and (max-width:765px) {
+				.right {
+					width:100%!important;
+				}
+			}
+			
+			::selection {
+				background:#ffffff;
+				color:inherit;
+			}
+			
+			body {
+				font-family:"roboto mono", monospace;
+				font-size:calc(10px + 1vmin);
+				line-height:150%;
+				background:#215552;
+				color:#ffffff;
+				margin:0;
+				padding:0;
+			}
+			
+			h1, h2, h3 {
+				margin:0;
+				padding:0;
+				color:#ffbcd8;
+				line-height:150%;
+			}
+			
+			h1 {
+				font-size:1.8em;
+			}
+			
+			h2 {
+				font-size:1.3em;
+			}
+			
+			h3 {
+				display:inline-block;
+				font-size:1.1em;
+				padding:1em 0em 0.5em 0em;
+			}
+			
+			p {
+				margin:0.5em 0em;
+			}
+			
+			a {
+				text-decoration:none;
+				transition:1s;
+			}
+			
+			a:hover {
+				filter:hue-rotate(540deg);
+				-webkit-filter:hue-rotate(540deg);
+				transition:1s;
+			}
+			
+			#wrap {
+				margin:10% 9% 14% 9%;
+				width:60%;
+				max-width:100%;
+			}
+			
+			.left, .right {
+				display:inline-block;
+			}
+			
+			.left {
+				float:left;
+			}
+			
+			.right {
+				float:right;
+				width:70%;
+				margin-bottom:3.5em;
+			}
+			
+			.block {
+				display:block;
+				clear:both;
+				margin-bottom:3.5em;
+			}
+			
+			.list a {
+				display:inline-block;
+				margin-right:3em;
+				margin-bottom:1em;
+				line-height:100%;
+				color:white;
+				padding:2px;
+				color:#e4da8d;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="block">
+				<h1>robin</h1>
+				<p d="desc">welcome to my nest in the forest of the internet.</p>
+			</div>
+			<div class="block">
+				<div class="left">
+					<h2>about</h2>
+				</div>
+				<div class="right">
+					<p>self-taught developer and programmer. likes poems, art, photography, and design. enjoys patterns, puzzles, and traveling.</p>
+				</div>
+			</div>
+			<div class="block">
+				<div class="left">
+					<h2>projects</h2>
+				</div>
+				<div class="right">
+					<p>a log of coding projects i have done or am doing.</p> 
+					<div id="timeline">
+						<p>
+							<h3>2018</h3>
+							<div class="list">
+							<a href="/boombox">boombox</a>
+							</div>
+						</p>
+						<p>
+							<h3>2016</h3>
+							<div class="list">
+							<a href="https://nouvae.tumblr.com">tumblr themes</a>
+							</div>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="left">
+					<h2>other</h2>
+				</div>
+				<div class="right">
+					<p>
+						<div class="list">
+						<a href="/">tumblr</a>
+						<a href="/">github</a>
+						<a href="/">fragments</a>
+						</div>
+					</p>
+				</div>
+			</div>
+	</div>
+	</body>
+</html>
