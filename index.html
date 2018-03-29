@@ -12,14 +12,16 @@ github @robinpx
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="shortcut icon" href="robinpx.png" type="image/x-icon" />
 		<title>robin</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Muli:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script>
 		$(document).ready(function() {
-			var palette = [["#215552", "#ffffff", "#ffbcd8", "#e4da8d"],
+			var palette = 
+			[["#215552", "#ffffff", "#ffbcd8", "#e4da8d"],
 			["#067105","#ffffff","#fec3c2", "#ccedf2"],
 			["#6f1835","#ffffff", "#8de4c7", "#d1e48d"],
-			["#202020","#ffffff", "#c6e7ff", "#c6ffcd"]];
+			["#202020","#ffffff", "#c6e7ff", "#c6ffcd"],
+			["#ffffff", "#444444", "#000000", "#a5a5a5"]];
 			var num = Math.floor(Math.random() * palette.length-1);
 			$("body").css({ background : palette[num][0], color : palette[num][1] });
 			$("h1,h2,h3").css("color", palette[num][2]);
