@@ -1,2 +1,2 @@
 # robinpx.github.io
-My simple site. 
+My simple responsive website. 
