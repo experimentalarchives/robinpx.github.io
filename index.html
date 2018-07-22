@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
 
-a quickie website by robin 
+a quickie website by robin
 
-github @robinpx 
+github @robinpx
 
 -->
 <html>
@@ -13,166 +13,77 @@ github @robinpx
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
 		<link rel="shortcut icon" href="robinpx.png" type="image/x-icon" />
 		<title>robin</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script>
-			/*
-		$(document).ready(function() {
-			var palette = 
-			[["#215552", "#ffffff", "#ffbcd8", "#e4da8d"],
-			["#067105","#ffffff","#f9ff50", "#ccedf2"],
-			["#6f1835","#ffffff", "#8de4c7", "#d1e48d"],
-			["#202020","#ffffff", "#c6e7ff", "#c6ffcd"],
-			["#ffffff", "#444444", "#000000", "#a5a5a5"]];
-			var num = Math.floor(Math.random() * palette.length-1);
-			$("body").css({ background : palette[num][0], color : palette[num][1] });
-			$("h1,h2,h3").css("color", palette[num][2]);
-			$(".list a").css("color", palette[num][3]);
-		}); */
+
 		</script>
 		<style>
-			@media only screen and (max-width:765px) {
-				.right {
-					width:100%!important;
-				}
-			}
-			
+
 			::selection {
 				background:#000000;
 				color:#ffffff;
 			}
-			
+
 			body {
-				font-family:"roboto mono", monospace;
-				font-size:15px;
+				font-family:"work sans", sans-serif;
+				font-size:4.5vmin;
 				line-height:150%;
 				background:#ffffff;
 				color:#000000;
 				margin:0;
 				padding:0;
 			}
-			
-			h1, h2, h3 {
-				margin:0;
-				padding:0;
-				color:#000000;
-				line-height:150%;
-			}
-			
-			h1 {
-				font-size:1.8em;
-			}
-			
-			h2 {
-				font-size:1.3em;
-			}
-			
-			h3 {
-				display:inline-block;
-				font-size:1.1em;
-				padding:1em 0em 0.5em 0em;
-			}
-			
+
 			p {
 				margin:0.5em 0em;
 			}
-			
-			a {
-				color:teal;
+
+			a, a:hover {
+				color:#000000;
 				text-decoration:none;
-				transition:1s;
+				border-bottom:0.5vmin solid #000000;
 			}
-			
-			a:hover {
-				filter:hue-rotate(540deg);
-				-webkit-filter:hue-rotate(540deg);
-				transition:1s;
-			}
-			
+
 			#wrap {
-				margin:10% 9% 14% 9%;
-				width:60%;
+				margin:10% 8%;
+				width:90%;
 				max-width:100%;
 			}
-			
-			.left, .right {
-				display:inline-block;
-			}
-			
-			.left {
-				float:left;
-			}
-			
-			.right {
-				float:right;
-				width:70%;
-				margin-bottom:3.5em;
-			}
-			
+
 			.block {
-				display:block;
-				clear:both;
-				margin-bottom:3.5em;
+				margin:3% auto;
 			}
-			
-			.list a {
-				display:inline-block;
-				margin-right:3em;
-				margin-bottom:1em;
-				line-height:100%;
-				padding:2px;
+
+			ul {
+				padding:0;
+				margin:0;
+				list-style-type:none;
 			}
+
+			li {
+				margin-bottom:1%;
+			}
+
 		</style>
 	</head>
 	<body>
 		<div id="wrap">
 			<div class="block">
-				<h2>hi there. i'm robin. welcome to my nest in the forest of the net.</h2>
-			</div>
+				<p>
+				<b>hello, i'm robin.</b><br>
+			  hobbyist web designer & developer & programmer.<br>
+				likes puzzles, poems, and fruit.
+			  </p>
+	 	  </div>
 			<div class="block">
-				<div class="left">
-					<h2>about.</h2>
-				</div>
-				<div class="right">
-					<p>self-taught developer and programmer. likes poems, art, photography, and design. enjoys patterns, puzzles, and traveling.</p>
-				</div>
-			</div>
-			<div class="block">
-				<div class="left">
-					<h2>projects.</h2>
-				</div>
-				<div class="right">
-					<p>a log of coding projects i have done or am doing.</p> 
-					<div id="timeline">
-						<p>
-							<h3>2018</h3>
-							<div class="list">
-							<a href="/boombox">boombox</a>
-							</div>
-						</p>
-						<p>
-							<h3>2016</h3>
-							<div class="list">
-							<a href="https://nouvae.tumblr.com">tumblr themes</a>
-							</div>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="block">
-				<div class="left">
-					<h2>other.</h2>
-				</div>
-				<div class="right">
-					<p>
-						<div class="list">
-						<a href="https://oetica.tumblr.com">tumblr</a>
-						<a href="https://github.com/robinpx">github</a>
-						<a href="/">fragments</a>
-						</div>
-					</p>
-				</div>
-			</div>
+				<ul>
+					<li><a href="https://robinpx.github.io/boombox">boombox</a></li>
+					<li><a href="https://nouvae.tumblr.com">tumblr themes</a></li>
+					<li><a href="https://robinpx.github.io/fragments">fragments</a></li>
+			  </ul>
+			</p>
+		</div>
 	</div>
 	</body>
 </html>
